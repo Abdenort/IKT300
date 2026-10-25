@@ -1,10 +1,10 @@
 ﻿using System.IO.Ports;
 
 
-namespace PS2000Library
+namespace PsuDeviceLibrary
 {
 
-    internal class PS2000 : IPS2000
+    internal class PhysicalPsuController : PsuInterfaceController
     {
         public string SerialNumber = "";
         public string DeviceType = "";

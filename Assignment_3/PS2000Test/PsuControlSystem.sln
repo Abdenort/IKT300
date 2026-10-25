@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.10.12224.181 stable
+VisualStudioVersion = 18.10.12224.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS2000Test", "PS2000Test\PS2000Test.csproj", "{A767E797-34F9-44AA-8517-9A7EBDBC8A78}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsuControlApp", "PS2000Test\PsuControlApp.csproj", "{A767E797-34F9-44AA-8517-9A7EBDBC8A78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PS2000Library", "PS2000.cs\PS2000Library.csproj", "{2E7CA7C7-B6DA-45CE-A511-998C370A901C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsuDeviceLibrary", "PS2000.cs\PsuDeviceLibrary.csproj", "{2E7CA7C7-B6DA-45CE-A511-998C370A901C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsuMqttController", "PsuInterfaceMqtt\PsuMqttController.csproj", "{321984F8-86A7-450D-8733-073773AC99D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2E7CA7C7-B6DA-45CE-A511-998C370A901C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E7CA7C7-B6DA-45CE-A511-998C370A901C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E7CA7C7-B6DA-45CE-A511-998C370A901C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{321984F8-86A7-450D-8733-073773AC99D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321984F8-86A7-450D-8733-073773AC99D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321984F8-86A7-450D-8733-073773AC99D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321984F8-86A7-450D-8733-073773AC99D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

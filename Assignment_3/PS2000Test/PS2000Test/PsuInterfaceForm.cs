@@ -1,9 +1,9 @@
 ﻿    using System.Windows.Forms;
-    using PS2000Library;
+    using PsuDeviceLibrary;
 
-    public class MainForm : Form
+    public class PsuInterfaceForm : Form
     {
-    private readonly IPS2000 psu = PS2000Factory.Create(1);
+    private readonly PsuInterfaceController psu = PsuControllerFactory.Create(1);
         private Label deviceTypeValue;
         private Label serialNumberValue;
         private Label maxVoltageValue;
@@ -12,7 +12,7 @@
 
         private TextBox voltageInput;
 
-        public MainForm()
+        public PsuInterfaceForm()
         {
 
             Text = "PS2000 Control";

@@ -5,12 +5,12 @@ using System.Collections;
 using System.ComponentModel;
 using System.IO.Ports;
 
-internal class psu
+internal class Program
 {
     [STAThread]
     static void Main()
     {
         ApplicationConfiguration.Initialize();
-        Application.Run(new MainForm());
+        Application.Run(new PsuInterfaceForm());
     }
 }

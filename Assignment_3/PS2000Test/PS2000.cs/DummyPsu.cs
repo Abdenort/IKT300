@@ -1,10 +1,11 @@
-﻿using System;
+﻿using PsuDeviceLibrary;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PS2000Library
+namespace PsuDeviceLibrary
 {
-    internal class DummyPsu : IPS2000
+    internal class DummyPsu : PsuInterfaceController
     {
 
         public string GetArticleNumber()
@@ -14,7 +15,7 @@ namespace PS2000Library
 
         public string GetDeviceType()
         {
-            return "¨DummyType";
+            return "DummyType";
         }
 
         public string GetSerialNumber()

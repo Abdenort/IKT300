@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PsuDeviceLibrary;
 
-namespace PS2000Library
+namespace PsuDeviceLibrary
 {
-    public interface IPS2000
+    public interface PsuInterfaceController
     {
         double GetVoltage();
 

@@ -1,15 +1,16 @@
-﻿using System;
+﻿using PsuDeviceLibrary;
+using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace PS2000Library
+namespace PsuDeviceLibrary
 {
-    public static class PS2000Factory
+    public static class PsuControllerFactory
     {
-        public static IPS2000 Create(int psuType)
+        public static PsuInterfaceController Create(int psuType)
         {
-            IPS2000 psu = null;
+            PsuInterfaceController psu = null;
 
             switch (psuType)
             {
@@ -17,7 +18,7 @@ namespace PS2000Library
                     psu = new DummyPsu();
                     break;
                 case 1:
-                    psu = new PS2000();
+                    psu = new PhysicalPsuController();
                     break;
                 default:
                     // code block

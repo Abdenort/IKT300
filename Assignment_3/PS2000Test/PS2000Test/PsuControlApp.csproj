@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PS2000.cs\PS2000Library.csproj" />
+      <ProjectReference Include="..\PS2000.cs\PsuDeviceLibrary.csproj" />
     </ItemGroup>
 
 </Project>
