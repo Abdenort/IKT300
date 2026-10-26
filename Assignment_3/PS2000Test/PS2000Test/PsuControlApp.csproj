@@ -14,6 +14,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="M2Mqtt" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\PS2000.cs\PsuDeviceLibrary.csproj" />
     </ItemGroup>
 

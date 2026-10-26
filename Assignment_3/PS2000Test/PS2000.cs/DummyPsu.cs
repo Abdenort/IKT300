@@ -7,6 +7,7 @@ namespace PsuDeviceLibrary
 {
     internal class DummyPsu : PsuInterfaceController
     {
+        private double voltage = 2.232;
 
         public string GetArticleNumber()
         {
@@ -25,7 +26,7 @@ namespace PsuDeviceLibrary
 
         public double GetVoltage()
         {
-            return 2.232;
+            return voltage;
         }
 
         public void PowerOutputOff()
@@ -50,7 +51,10 @@ namespace PsuDeviceLibrary
 
         public void SetVoltage(float setVolt)
         {
-            
+            if(setVolt < 0 || setVolt > GetMaxVoltage())
+                throw new ArgumentOutOfRangeException(nameof(setVolt));
+
+            voltage = setVolt;
         }
 
         public int GetMaxVoltage()
